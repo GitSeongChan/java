@@ -23,7 +23,7 @@ public class ReferenceParameterDemo {
     }
 
     static void _reference2(A b){
-        b.id = 2;
+        b.id = 3;
     }
 
     public static void runReference2(){
