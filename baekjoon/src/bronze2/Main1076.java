@@ -71,3 +71,45 @@ public class Main1076 {
 
     }
 }
+
+
+class max{
+    public static void main(String[] args) {
+        int[] arr = {23, 5, 65, 3, 234, 54, 3};
+        max(arr);
+    }
+    static void max(int[] arr){
+        int temp = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > temp) {
+                temp=arr[i];
+            }
+        }
+        System.out.println(temp);
+    }
+    static void sortArr(int[] arr) {
+        for (int i = 0; i < arr.length-1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+    }
+}
+class test {
+    public static void main(String[] args) {
+        int[] arr = new int[] {23, 5, 65, 3, 234, 54, 3};
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+}
